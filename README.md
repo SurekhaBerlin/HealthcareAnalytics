@@ -1,4 +1,4 @@
-## Patient Emergency Room Visit Dashboard
+## PATIENT EMERGENCY ROOM VISIT DASHBOARD
 Have you ever rushed to an emergency room, only to encounter a long wait for treatment? This Power BI dashboard visualizes key metrics from emergency department patient admissions data, offering insights into average wait times, patient satisfaction, and referral trends. This analysis aims to help both patients and healthcare providers better understand the dynamics of emergency care, identify areas for improvement, and enhance the overall patient experience in the ER.
 
 ### Key Findings
