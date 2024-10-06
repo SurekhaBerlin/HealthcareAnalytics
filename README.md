@@ -1,57 +1,74 @@
-## PATIENT EMERGENCY ROOM VISIT DASHBOARD
-Have you ever rushed to an emergency room, only to encounter a long wait for treatment? To shed light on this common experience, I created a Power BI dashboard that visualizes key metrics from emergency department patient admissions data.
+Patient Emergency Room Visit Dashboard
+Have you ever rushed to an emergency room, only to encounter a long wait for treatment? This Power BI dashboard visualizes key metrics from emergency department patient admissions data, offering insights into average wait times, patient satisfaction, and referral trends. This analysis aims to help both patients and healthcare providers better understand the dynamics of emergency care, identify areas for improvement, and enhance the overall patient experience in the ER.
 
-### Key Findings:
-1. Patient Satisfaction: The majority of patients reported being less than moderately satisfied with their experience.
-2, Average Wait Time: The average wait time before being seen was 35.26 minutes.
-3. Peak and Off-Peak Wait Times: Wait times peaked on Mondays at 11 PM and were shortest on Wednesdays at 1 AM.
-4. Referral Trends: The most frequent referral from the ER was to General Practice, followed by Orthopedics.
-   
-### The Data
-### Dataset Source: 
+Key Findings
+Patient Satisfaction: The majority of patients reported being less than moderately satisfied with their experience.
+Average Wait Time: The average wait time before being seen was 35.26 minutes.
+Peak Wait Times: Wait times peaked on Mondays at 11 PM and were shortest on Wednesdays at 1 AM.
+Referral Trends: The most frequent referral from the ER was to General Practice, followed by Orthopedics.
+The Data
+This dataset comes from Real World Fake Data, representing a simulated hospital ER with 9,216 entries. Each entry corresponds to a patient and includes the following attributes:
 
-This dataset comes from Real World Fake Data, representing a simulated hospital ER.
+date: Day and time
+patient_id: Patient Code
+patient_gender: Gender (Male, Female, NC)
+patient_age: Patient’s age
+patient_sat_score: Patient satisfaction score
+patient_first_initial: Patient’s first name initial (for privacy)
+patient_last_name: Patient’s last name
+patient_race: Patient’s race
+patient_admin_flag: “Unknown explanation" (excluded from analysis)
+patient_waittime: Patient’s ER wait time
+department_referral: Department that the patient was referred to (e.g., General Practice, Orthopedics)
+Visualizations
+Total Number of Patients
+Use the patient_id field and apply the Count function to obtain the overall count of patients entering the emergency room. The expected result should be 9,216.
 
-### Entries: 
-There are 9,216 entries, each corresponding to a patient.
-### Attributes:
-The dataset includes 11 attributes, such as patient ID, gender, race, and wait time.
-### The Dashboard
-### Access:
+% of Patients by Gender
+A pie chart represents the distribution of patients by gender. Use the patient_id for counting and the patient_gender field to calculate percentages.
+
+Patient Average Satisfaction
+Create a line chart with the date in the columns and the average patient_sat_score in the rows, formatted to reflect the month and year.
+
+Patient Average Wait Time
+Duplicate the sheet used for satisfaction to create another for patient_waittime, displaying the average wait time in minutes.
+
+Patients by Age Group
+Generate age groups using a calculated field, resulting in three categories: 0–18, 19–65, and 66+.
+
+Average Wait Time by Day and Hour
+Create a heatmap using the date converted to weekdays for columns and hours for rows, utilizing average wait time as the metric.
+
+Patients by Race
+Construct a bar graph with patient_id counts in columns and patient_race in rows, adding a gradient color effect.
+
+Patients by Department Referral
+Duplicate the patients by race visualization, substituting patient_race with department_referral.
+
+Dashboard Access
 The interactive dashboard is available for viewing on Power BI.
-### Poor Satisfaction
-### Satisfaction Score: 
-The average satisfaction score among patients was just 4.99 out of 10.
-### Score Breakdown: 
-On a 0-10 scale, where 0-6 are detractors, 7-8 are passive, and 9-10 are promoters, most patients had a negative experience.
-### Highest and Lowest Scores: 
-The highest satisfaction score was in March (5.327), and the lowest was in April (4.627).
-### Need for Improvement: 
-Changes are necessary to improve the patient experience, possibly due to overcrowding or inadequate staffing.
+
+Insights
+Patient Satisfaction
+The average satisfaction score among patients in this emergency department was just 4.99 out of 10. Most patients had a negative experience, with the highest score in March (5.327) and the lowest in April (4.627).
+
 Average Wait Times
-### Monthly Variation: 
-Monthly averages for wait times showed minimal variation.
-### Highest and Lowest Averages: 
-The highest average was 36.67 minutes in February, and the lowest was 34.27 minutes in September.
+Monthly averages for wait times showed minimal variation, with a maximum of 36.67 minutes in February and a minimum of 34.27 minutes in September.
+
 Longest and Shortest Wait Times
-### Heat Map Analysis:
-The longest waits occurred on Monday nights at 11 PM, averaging 40.69 minutes, while the shortest waits were on Wednesdays at 1 AM, averaging 29.65 minutes.
-Surprising Trends: Peak wait times did not occur on Fridays or weekends. Weekday dinner times generally had shorter waits, except on Tuesdays at 6 PM and Friday nights. Sundays typically had shorter waits than Saturdays.
-### Department Referrals
-### Primary Referrals: 
-General Practice tops the list of ER referrals for conditions like the flu, chest pain, dehydration, and allergic reactions.
-### Access Issues: 
-Many individuals lack access to a primary care physician due to insurance or socioeconomic barriers, making the ER their only option.
-Second Most Common Referral: Orthopedics is the second most common referral, addressing issues like broken bones and sports injuries.
-### Takeaways
-### Patient Perception: 
-A patient’s view of the healthcare system is often shaped by their experiences in hospitals and clinics.
-### Low Satisfaction Impact: 
-An emergency room with a low satisfaction score, such as 4.99 out of 10, typically results in dissatisfied patients.
-Factors Contributing to Low Scores: Lengthy wait times contribute to this low score; patients waited an average of 35.25 minutes before treatment and were often referred to general practitioners.
-Importance of Metrics: Understanding these metrics helps patients make informed decisions about where to seek care and aids hospital leadership in implementing necessary improvements.
+The longest waits occurred on Monday nights at 11 PM (average of 40.69 minutes), while the shortest were on Wednesdays at 1 AM (average of 29.65 minutes).
+
+Department Referrals
+General Practice tops the list of ER referrals, often for conditions that could be addressed by a primary care physician, with Orthopedics being the second most common referral.
+
+Takeaways
+Understanding these metrics can help patients make informed decisions about where to seek care and assist hospital leadership in implementing necessary improvements. The data clearly indicates that changes are essential to enhance patient care in this ER.
+
+Conclusion
+Thank you for reading! I look forward to conducting more real-time analyses of healthcare data to promote data-driven decision-making. If this interests you, feel free to follow along for more updates!
 
 
-## Thanks for Reading! I look forward to conducting more real-time analyses of healthcare data to promote data-driven decision-making. If this interests you, follow along for more updates!
+
+
 
 ![Healthcare pic](https://github.com/user-attachments/assets/bef2e526-8295-432f-9a71-de81246b5b68)
