@@ -3,10 +3,11 @@
 Have you ever rushed to an emergency room, only to encounter a long wait for treatment? To shed light on this common experience, I created a Power BI dashboard that visualizes key metrics from emergency department patient admissions data. This dashboard provides insights into average wait times, patient satisfaction, and referral trends, helping both patients and healthcare providers better understand the dynamics of emergency care. Through this analysis, we can identify areas for improvement and enhance the overall patient experience in the ER.
 
 ### Key Findings:
-•	The majority of patients reported being less than moderately satisfied with their experience.
-•	The average wait time before being seen was 35.26 minutes.
-•	Wait times peaked on Mondays at 11 PM and were shortest on Wednesdays at 1 AM.
-•	The most frequent referral from the ER was to General Practice, followed by Orthopedics.
+
+* The majority of patients reported being less than moderately satisfied with their experience.
+* The average wait time before being seen was 35.26 minutes.
+* Wait times peaked on Mondays at 11 PM and were shortest on Wednesdays at 1 AM.
+* The most frequent referral from the ER was to General Practice, followed by Orthopedics.
 
 The Data This dataset comes from Real World Fake Data, representing a simulated hospital ER with 9,216 entries, each corresponding to a patient, and encompassing 11 attributes, such as patient ID, gender, race, and wait time.
 The Dashboard The interactive dashboard is available for viewing on Power BI.
