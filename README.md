@@ -9,7 +9,7 @@ Have you ever rushed to an emergency room, only to encounter a long wait for tre
 
 ### The Data
 This dataset comes from Real World Fake Data, representing a simulated hospital ER with 9,216 entries. Each entry corresponds to a patient and includes the following attributes:
-https://data.world/markbradbourne/rwfd-real-world-fake-data
+
 1. date: Day and time
 2. patient_id: Patient Code
 3. patient_gender: Gender (Male, Female, NC)
